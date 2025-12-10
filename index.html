@@ -1,0 +1,62 @@
+<!-- index.html (Home Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoFresh Organics - Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('image.png') center/cover no-repeat fixed;
+            color: rgb(241, 231, 25);
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            position: sticky;
+            top: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            color: #00ff99;
+            transform: scale(1.1);
+        }
+        .home-box {
+            text-align: center;
+            margin-top: 150px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="home-box">
+        <h1>Welcome to EcoFresh Organics</h1>
+        <p>Pure • Natural • Healthy</p>
+    </div>
+</body>
+</html>
+
+
+
+

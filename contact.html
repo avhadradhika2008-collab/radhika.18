@@ -1,0 +1,71 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1472396961693-142e6e269027') center/cover no-repeat fixed;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0,0,0,0.6);
+            position: sticky;
+            top: 0;
+        }
+        .contact-box {
+            width: 40%;
+            background: rgba(0,0,0,0.6);
+            padding: 25px;
+            margin: 120px auto;
+            border-radius: 15px;
+            animation: zoomIn 1.5s;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            font-size: 18px;
+            background-color: #00cc66;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="contact-box">
+        <h1>Contact Us</h1>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Email" />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</body>
+</html>

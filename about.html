@@ -1,0 +1,56 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover no-repeat fixed;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: rgba(0,0,0,0.6);
+            position: sticky;
+            top: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .about-box {
+            margin: 120px auto;
+            width: 60%;
+            background: rgba(0,0,0,0.5);
+            padding: 25px;
+            border-radius: 15px;
+            animation: slideIn 2s;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="about-box">
+        <h1>About EcoFresh Organics</h1>
+        <p>EcoFresh Organics is a premium organic food brand offering chemical-free, preservative-free, and naturally grown produce. We believe in promoting healthy lifestyles through clean and natural food products.</p>
+    </div>
+</body>
+</html>
